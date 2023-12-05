@@ -1,0 +1,20 @@
+int button=2;
+int a,i=0;
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(button, INPUT);
+}
+void loop()
+ {  
+ a = digitalRead(button); 
+ if (a==1) 
+ {  
+  i=i+1;    
+Serial.print(" Counter =");   
+Serial.println(i);  
+}  
+else   
+{   
+ i=0;  
+ } }
